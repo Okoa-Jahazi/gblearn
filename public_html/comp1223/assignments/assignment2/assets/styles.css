@@ -108,20 +108,6 @@ body {
 	text-decoration: none;
 	transition: color 0.6s ease;
 }
-.social-media .icon #facebook {
-	color: #3b5998;
-}
-.social-media .icon #twitter {
-	color: #1da1f2;
-}
-
-.social-media .icon #linkedin {
-	color: #0077b5;
-}
-
-.social-media .icon #instagram {
-	color: #e1306c;
-}
 
 .call-us {
 	position: absolute;
@@ -275,7 +261,6 @@ body {
 	font-weight: 700;
 	font-family: 'Pacifico', cursive;
 	margin: 0.25em auto;
-	color: green;
 }
 
 .testmonials-section .cards .card .customer-name p {
