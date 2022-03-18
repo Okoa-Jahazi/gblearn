@@ -1,0 +1,117 @@
+/* Nav*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+html,
+body {
+	display: grid;
+	height: 100%;
+	place-items: center;
+	text-align: center;
+	/* background: #131419; */
+}
+.wrapper {
+	height: 60px;
+	width: 55vw;
+	/* background: #131419; */
+	line-height: 60px;
+	border-radius: 50px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+		-3px -3px 7px rgba(255, 255, 255, 0.05);
+}
+.wrapper nav {
+	position: relative;
+	display: flex;
+}
+.wrapper nav label {
+	flex: 1;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	cursor: pointer;
+}
+.wrapper nav label a {
+	position: relative;
+	z-index: -1;
+	color: #8c8c8c;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.6s ease;
+}
+.wrapper nav label a i {
+	font-size: 25px;
+	margin: 0 7px;
+	color: #8c8c8c;
+}
+.wrapper nav #home:checked ~ label.home a,
+.wrapper nav #home:checked ~ label.home a i,
+.wrapper nav #hero:checked ~ label.hero a,
+.wrapper nav #hero:checked ~ label.hero a i,
+.wrapper nav #contact:checked ~ label.contact a,
+.wrapper nav #contact:checked ~ label.contact a i,
+.wrapper nav #testmonials:checked ~ label.testmonials a,
+.wrapper nav #testmonials:checked ~ label.testmonials a i,
+.wrapper nav #about:checked ~ label.about a,
+.wrapper nav #about:checked ~ label.about a i {
+	color: #fff;
+}
+.wrapper nav .tab {
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	left: 0;
+	bottom: 0;
+	background: #a8adb3;
+	border-radius: 50px;
+	transition: 0.6s cubic-bezier(0.6, -0.55, 0.265, 1.55);
+}
+.wrapper nav #home:checked ~ label.home a {
+	color: #fff;
+}
+.wrapper nav #hero:checked ~ .tab {
+	left: 20%;
+}
+.wrapper nav #contact:checked ~ .tab {
+	left: 40%;
+}
+.wrapper nav #testmonials:checked ~ .tab {
+	left: 60%;
+}
+.wrapper nav #about:checked ~ .tab {
+	left: 80%;
+}
+.wrapper nav input {
+	display: none;
+}
+
+.social-media {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	display: flex;
+	gap: 10px;
+}
+.social-media a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	transition: color 0.6s ease;
+}
+.social-media .icon #facebook {
+	color: #3b5998;
+}
+.social-media .icon #twitter {
+	color: #1da1f2;
+}
+
+.social-media .icon #linkedin {
+	color: #0077b5;
+}
+
+.social-media .icon #instagram {
+	color: #e1306c;
+}
